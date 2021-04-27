@@ -38,7 +38,6 @@ public class VehiclesApiApplicationTests {
                         .postForEntity("http://localhost:" + port + "/cars", car, String.class);
 
         assertThat(response.getStatusCode(), equalTo(HttpStatus.CREATED));
-        System.out.println(response);
     }
 
     @Test
